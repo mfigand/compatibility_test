@@ -1,0 +1,130 @@
+body{
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: center;
+  /*Align form*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_container {
+  background-color: white;
+  width: 810px;
+  height: 255px;
+}
+
+.wrapper{
+  padding-top: 100px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+}
+
+.form_container img{
+  position: absolute;
+  top: -70px;
+  max-width: 150px;
+}
+
+#next_button {
+  height: 255px ;
+  width: 100%;
+  background-color: #e00817;
+}
+
+.form_container i {
+  color: white;
+  width: 50px;
+}
+
+.question {
+  font-size: large;
+}
+
+.options label{
+  font-weight: 300;
+  font-size: medium;
+}
+
+.result_wrapper {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+}
+
+.result_wrapper img{
+  position: absolute;
+  top: -70px;
+  left: 300px;
+  max-width: 150px;
+}
+
+.result_group i {
+  color: #e00817;
+  width: 30px;
+}
+
+#share_button {
+  position: absolute;
+  top: 220px;
+  left: 310px;
+  color: white;
+  width: 130px;
+  height: 35px;
+}
+
+
+/*Show other background and style form depending on screen size*/
+@media (min-width: 0px) and (max-width: 650px) {
+  body {
+    background-image: url(./../images/small_background.png) !important;
+    background-size: cover;
+  }
+
+  .form_container {
+    padding-right: 30px !important;
+    height: 370px !important;
+  }
+
+  #next_button {
+    height: 370px !important;
+  }
+
+  #share_button {
+    top: 335px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 780px) {
+  body {
+    background-image: url(./../images/medium_background.png) !important;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 991px) {
+  body {
+    background-image: url(./../images/medium_background.png) !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1320px) {
+  body {
+    background-image: url(./../images/large_background_2.png) !important;
+  }
+}
+
+@media(min-width: 1321px){
+  body {
+    background-image: url(./../images/large_background_1.png); 
+    background-size: contain;
+  }
+}
+
+@media(min-width: 1321px){
+  body {
+    background-image: url(./../images/large_background_1.png); 
+    background-size: contain;
+  }
+}
+
